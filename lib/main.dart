@@ -169,172 +169,248 @@ class MyApp extends StatelessWidget {
 
                 ),
 
-
+//            __________ Single FOOD CARD
+// __________ Single FOOD CARD 1
               Container(
                 margin: EdgeInsets.all(10),
-                child:Column(
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children:[
+                  children: [
                     // ___ IMAGE _______
                     Container(
                       height: 200,
-                      decoration : BoxDecoration(
-                      borderRadius: BorderRadius.only(  topLeft: Radius.circular(20),   // top-left corner radius
-                        topRight: Radius.circular(20)),
-                        image:DecorationImage(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(20),
+                          topRight: Radius.circular(20),
+                        ),
+                        image: DecorationImage(
                           image: AssetImage('images/ecole_6.jpg'),
                           fit: BoxFit.cover,
                         ),
-
-                      ),
-                     ),
-                    // ________ TILTE
-                    Container(
-                      padding: EdgeInsets.all(10),
-                      margin: EdgeInsets.all(10),
-                      color:Colors.grey,
-
-                      child:Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text('FOOD TITLE',style:TextStyle(fontWeight: FontWeight.bold,color:Colors.deepOrange)),
-                          Text("FOOD DESCRIPTION",style:TextStyle(color:Colors.grey)),
-                        ],
                       ),
                     ),
-
-                    //__________________ PRICE AND TIME AND RATE
+                    // ______ BOTTOM CONTAINER
                     Container(
-                      padding: EdgeInsets.all(10),
-                      margin: EdgeInsets.all(10),
+                      color: Color(0xFFE0E0E0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          // ________ TITLE
+                          Container(
+                            padding: EdgeInsets.all(10),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
 
-                      child :Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children:[
-                            Text('600 DA'),
-                            Text('35 min'),
-                            Text('3.5'),
-                          ],
-
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text('Classic Burger',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.deepOrange)),
+                                Text("Juicy beef patty with cheese, lettuce, and tomato",
+                                    style: TextStyle(color: Colors.grey)),
+                              ],
+                            ),
                           ),
+                          //__________________ PRICE AND TIME AND RATE
+                          Container(
+                            padding: EdgeInsets.all(10),
+                            margin: EdgeInsets.all(10),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
 
-
-
-                    ),
-
-                  ],
-                    ),
-              ),
-              Container(
-                color:Colors.blueGrey,
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(10),
-                child:Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children:[
-                    // ___ IMAGE _______
-                    Container(
-                      height: 200,
-                      decoration : BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        image:DecorationImage(
-                          image: AssetImage('images/ecole_6.jpg'),
-                          fit: BoxFit.cover,
-                        ),
-
-                      ),
-                    ),
-                    // ________ TILTE
-                    Container(
-                      padding: EdgeInsets.all(10),
-                      margin: EdgeInsets.all(10),
-
-                      child:Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text('FOOD TITLE',style:TextStyle(fontWeight: FontWeight.bold,color:Colors.deepOrange)),
-                          Text("FOOD DESCRIPTION",style:TextStyle(color:Colors.grey)),
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text('600 DA'),
+                                Text('35 min'),
+                                Text('3.5'),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
-
-                    //__________________ PRICE AND TIME AND RATE
-                    Container(
-                      padding: EdgeInsets.all(10),
-                      margin: EdgeInsets.all(10),
-
-                      child :Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children:[
-                          Text('Price'),
-                          Text('Time'),
-                          Text('Rate'),
-                        ],
-
-                      ),
-
-
-
-                    ),
-
                   ],
                 ),
               ),
+
+// __________ Single FOOD CARD 2
               Container(
-                color:Colors.blueGrey,
                 margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(10),
-                child:Column(
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children:[
-                    // ___ IMAGE _______
+                  children: [
                     Container(
                       height: 200,
-                      decoration : BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        image:DecorationImage(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(20),
+                          topRight: Radius.circular(20),
+                        ),
+                        image: DecorationImage(
                           image: AssetImage('images/ecole_6.jpg'),
                           fit: BoxFit.cover,
                         ),
-
                       ),
                     ),
-                    // ________ TILTE
                     Container(
-                      padding: EdgeInsets.all(10),
-                      margin: EdgeInsets.all(10),
-
-                      child:Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      color: Color(0xFFE0E0E0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('FOOD TITLE',style:TextStyle(fontWeight: FontWeight.bold,color:Colors.deepOrange)),
-                          Text("FOOD DESCRIPTION",style:TextStyle(color:Colors.grey)),
+                          Container(
+                            padding: EdgeInsets.all(10),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Chicken Shawarma',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.deepOrange)),
+                                Text("Tender grilled chicken wrapped with garlic sauce",
+                                    style: TextStyle(color: Colors.grey)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.all(10),
+                            margin: EdgeInsets.all(10),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text('500 DA'),
+                                Text('25 min'),
+                                Text('4.2'),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
-
-                    //__________________ PRICE AND TIME AND RATE
-                    Container(
-                      padding: EdgeInsets.all(10),
-                      margin: EdgeInsets.all(10),
-
-                      child :Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children:[
-                          Text('Price'),
-                          Text('Time'),
-                          Text('Rate'),
-                        ],
-
-                      ),
-
-
-
-                    ),
-
                   ],
                 ),
               ),
+
+// __________ Single FOOD CARD 3
+              Container(
+                margin: EdgeInsets.all(10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 200,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(20),
+                          topRight: Radius.circular(20),
+                        ),
+                        image: DecorationImage(
+                          image: AssetImage('images/ecole_6.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      color: Color(0xFFE0E0E0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(10),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+
+                              children: [
+                                Text('Margherita Pizza',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.deepOrange)),
+                                Text("Fresh mozzarella, basil leaves, and tomato sauce",
+                                    style: TextStyle(color: Colors.grey)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.all(10),
+                            margin: EdgeInsets.all(10),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text('900 DA'),
+                                Text('40 min'),
+                                Text('4.7'),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+// __________ Single FOOD CARD 4
+              Container(
+                margin: EdgeInsets.all(10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 200,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(20),
+                          topRight: Radius.circular(20),
+                        ),
+                        image: DecorationImage(
+                          image: AssetImage('images/ecole_6.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      color: Color(0xFFE0E0E0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(10),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Beef Tacos',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.deepOrange)),
+                                Text("Crispy shells filled with spiced beef and cheese",
+                                    style: TextStyle(color: Colors.grey)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.all(10),
+                            margin: EdgeInsets.all(10),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text('700 DA'),
+                                Text('30 min'),
+                                Text('4.0'),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
 
             ],
 
